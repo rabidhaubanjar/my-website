@@ -1,42 +1,19 @@
-<!DOCTYPE html>
+
 <html>
   <head>
-    <title>My Personal Website</title>
-    <link rel="stylesheet" type="text/css" href="/css/c.css">
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Personal Website</h1>
-    </header>
-    <nav>
-      <ul><div class="nav">
-        <li><a href="My POrtfolio.html">About Me</a></li>
-        <li><a href="/html/photo.html">Photos</a></li>
-        <li><a href="/html/contacts.html">Contact</a></li>
-        <li><a href="https://rabidhaubanjar2.wordpress.com">My blogs</a></li>
-      </ul>
-    </nav>
-  </div>
-    <main>
-      <div class="flex-container">
-        <div class="about-me">
-          <h4> Let me Introduce myself for you. I am Rabi Dhaubanjar age 19 <br>studying here in Herald college kathmandu.<br> ugh its boring here to introduce😩. Let me redirect you in different page which can be much more interesting🤩.</h4>
-          <h5>To redirect you in different page click on about me in navagation bar.😏</h5>
-        </div>
-          <div class="image">
-            <img src="/photos/h.jpg" height="350px" width="300px">
-            <h4> A refrence photo of mine.😁</h4>
-            <h5>want to see more?🤯</h5>
-            <h6>click on photos.😎</h6>
-          </div>
-          <div class="project">
-            <h4>So what do you think an i good enough or not. Now do you want to connect with me or not. Its up to you.</h4>
-            <h5> IF yes them click on contacts on navagation bar and find out the ways to get connected.</h5>
-          </div>
-        </div>
-    </main>
-    <footer>
-      <p>Copyright © 2023 My Personal Website</p>
-    </footer>
+    <div class="login-container">
+        <form onsubmit="return checkCredentials()" action="/html/homepage.html">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username(admin)" id="username">
+        <input type="password" placeholder="Password(admin)" id="password">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="/js/login.js"></script>
   </body>
 </html>
